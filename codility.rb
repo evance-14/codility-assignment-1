@@ -8,15 +8,15 @@ def solution(a, b, c)
     index = a.index(fruit_name)
     #Gets  price of the fruit from the array b use previous index
     #% handle the case where the index is greater than the length of the b
-    price = b[index % b.length]
+    price = b[a.index(fruit_name)]
     #Gets the discount of the fruit from the hash c
     #return 0 if fruitname absent in c
     discount = c[fruit_name] || 0
     #Add the cost of the fruit to the total cost
     cost += price * (100 - discount).to_f / 100
   end
-  #use round method to round  value of cost to the nearest integer.
-  cost.round
+  #puts value of cost to the nearest integer.
+  puts cost.to_i
 end
 
 a = ["apple", "orange", "banana", "apple", "banana"]
