@@ -6,8 +6,7 @@ def solution(a, b, c)
   a.each do |fruit_name|
    #find index of current fruit name in a
     index = a.index(fruit_name)
-    #Gets  price of the fruit from the array b use previous index
-    #% handle the case where the index is greater than the length of the b
+    #Gets  price of the fruit from the array b index .notation
     price = b[a.index(fruit_name)]
     #Gets the discount of the fruit from the hash c
     #return 0 if fruitname absent in c
